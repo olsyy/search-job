@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">JobSearching</string>
+    <string-array name="tab_name">
+        <item name="companies_tab">Companies</item>
+        <item name="vacancies_tab">Vacancies</item>
+    </string-array>
+    <string name="vacancies_tab">Vacancies</string>
+    <string name="companies_tab">Companies</string>
+    <string name="details">Details</string>
+    <string name="company_name_input">Company name: %s</string>
+    <string name="activity_field_input">Activity Field: %s</string>
+    <string name="vacancies">Vacancies</string>
+    <string name="vacancy_input">Vacancy: %s</string>
+    <string name="salary_input">Salary: %d</string>
+    <string name="candidate_level_input">Candidate Level: %s</string>
+    <string name="my_resume">My resume</string>
+    <string name="android_icon">android icon</string>
+    <string name="menu">Menu</string>
+    <string name="jobsearching">JobSearching</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+    <string name="info">Info</string>
+    <string name="education">Education</string>
+    <string name="name">Name</string>
+    <string name="profession">Profession</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="relocation">Relocation</string>
+    <string name="job_experience">Job Experience</string>
+    <string name="free_form">Free form</string>
+    <string name="tags">Tags: %s</string>
+    <string name="contacts">Contacts</string>
+    <string name="relocation_input">Relocation: %s</string>
+    <string name="date_of_birth_input">Date of birth: %s</string>
+    <string name="comment">Comment</string>
+    <string name="years_input">%s - %s</string>
+    <string name="end_year">End Year</string>
+    <string name="start_year">Start Year</string>
+    <string name="year_start">Year start</string>
+    <string name="year_end">Year end</string>
+    <string name="description">Description</string>
+    <string name="company_name">Company name</string>
+    <string name="divider">-</string>
+    <string name="education_type">Education type</string>
+    <string-array name="spinner_items">
+        <item>Higher</item>
+        <item>Secondary</item>
+        <item>Secondary special</item>
+    </string-array>
+    <string name="dialog_resume_editing_title">Would you like to resume editing?</string>
+    <string name="dialog_save_resume_title">Do you want save edited resume?</string>
+    <string name="dialog_positive_button">Yes</string>
+    <string name="dialog_negative_button">No</string>
+    <string name="dialog_neutral_button">Cancel</string>
+    <string name="dialog_to_save_changes_locally">Do you want to save resume to continue edit later?</string>
+</resources>

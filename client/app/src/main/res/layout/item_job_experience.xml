@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="8dp"
+android:layout_marginEnd="8dp"
+android:layout_marginBottom="8dp"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textViewCompanyNameJobExperience"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/textViewStartYearJob"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Type" />
+
+<TextView
+    android:id="@+id/textViewStartYearJob"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/textViewYearsDivider"
+    app:layout_constraintStart_toEndOf="@+id/textViewCompanyNameJobExperience"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="2020" />
+
+<TextView
+    android:id="@+id/textViewYearsDivider"
+    android:layout_width="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:text="@string/divider"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toStartOf="@+id/textViewEndYearJob"
+    app:layout_constraintStart_toEndOf="@+id/textViewStartYearJob"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textViewEndYearJob"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/textViewYearsDivider"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="2023" />
+
+<TextView
+    android:id="@+id/textViewEducationDescriptionJob"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    app:layout_constraintTop_toBottomOf="@+id/textViewEndYearJob"
+    tools:text="Desc" />
+
+<EditText
+    android:id="@+id/editTextCompanyNameJobExperience"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_weight="1"
+    android:autofillHints=""
+    android:hint="@string/education_type"
+    android:inputType="text"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/editTextYearStartJob"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_weight="1"
+    android:importantForAutofill="no"
+    android:hint="@string/year_start"
+    android:inputType="date"
+    android:visibility="gone"
+    app:layout_constraintEnd_toStartOf="@+id/editTextYearEndJob"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyNameJobExperience" />
+
+<EditText
+    android:id="@+id/editTextYearEndJob"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_weight="1"
+    android:importantForAutofill="no"
+    android:hint="@string/year_end"
+    android:inputType="date"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/editTextYearStartJob"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyNameJobExperience" />
+
+<EditText
+    android:id="@+id/editTextEducationDescriptionJob"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:importantForAutofill="no"
+    android:hint="@string/description"
+    android:inputType="text"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextYearEndJob" />
+
+<ImageButton
+    android:id="@+id/imageButtonDeleteJob"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:backgroundTint="@android:color/transparent"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_delete_button"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextEducationDescriptionJob"
+    app:tint="@android:color/holo_red_dark" />
+
+<androidx.constraintlayout.widget.Group
+    android:id="@+id/clViewGroupEdu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    app:constraint_referenced_ids="textViewCompanyNameJobExperience, textViewStartYearJob, textViewYearsDivider, textViewEndYearJob, textViewEducationDescriptionJob" />
+
+<androidx.constraintlayout.widget.Group
+    android:id="@+id/clEditGroupEdu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:visibility="gone"
+    app:constraint_referenced_ids="editTextCompanyNameJobExperience, editTextYearStartJob, editTextYearEndJob, editTextEducationDescriptionJob, imageButtonDeleteJob" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
