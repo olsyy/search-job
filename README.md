@@ -6,6 +6,8 @@ Server-side with a Vacancies database and client for job search.
 ![Kotlin](https://img.shields.io/badge/kotlin-2.0.10-orange.svg)
 ![Apache 2](https://img.shields.io/badge/license-Apache2-green.svg?style=flat)
 
+![App work](https://github.com/lsyyx/search-job/blob/main/img/Screen_recording_20250122_165044.gif)
+
 ## 📓 Description
 Server-side with a Vacancies and Companies database + Client-side for job search with personal Resume.
 
@@ -20,9 +22,6 @@ num | type | endpoint | description
 5 | GET | /resumes | Returns a list of all resumes.
 6 | GET | /resumes/{resumeId} | Returns a specific resume by its ID.
 6 | POST | /resumes/update/{resumeId} | Updates an existing resume.
-
-
-![App work](https://github.com/lsyyx/search-job/blob/main/img/Screen_recording_20250122_165044.gif)
 
 ## 🏁 Start
 
